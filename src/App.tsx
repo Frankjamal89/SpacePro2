@@ -665,8 +665,8 @@ export default function App() {
                       { num: '01', title: 'Discover', desc: 'Space forensics, lighting alignment indexes, and programmatic client brief analysis.' },
                       { num: '02', title: 'Design', desc: 'Millimeter spatial models, 3D high-fidelity visualization, and material sourcing.' },
                       { num: '03', title: 'Build', desc: 'Technical plumbing, advanced layout updates, and precision core masonry.' },
-                      { num: '04', title: 'Furnish', desc: 'Bespoke joinery fitting, textured plaster, and premium luxury textiles.' },
-                      { num: '05', title: 'Deliver', desc: 'Sartorial final staging, white-glove clean, and bespoke masterpiece reveal.' }
+                      { num: '04', title: 'Furnish', desc: 'Bespoke joinery Fitting, textured plaster, and premium luxury textiles.' },
+                      { num: '05', title: 'Deliver', desc: 'Sartorial Final staging, white-glove clean, and bespoke masterpiece reveal.' }
                     ].map((step, idx) => (
                       <div key={idx} className="relative space-y-4 text-left group">
                         {/* Connecting Line for desktop */}
@@ -682,7 +682,7 @@ export default function App() {
                           <h3 className="text-sm font-semibold uppercase tracking-wider text-brand-charcoal">
                             {step.title}
                           </h3>
-                          <p className="text-xs font-light text-gray-400 leading-relaxed">
+                          <p className="text-xs font-normal text-gray-600 leading-relaxed">
                             {step.desc}
                           </p>
                         </div>
