@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Aovel Cool";
+  src: url("/fonts/Aovel_Cool.ttf") format("truetype"),
+       url("/fonts/Aovel_Cool_Bold.ttf") format("truetype"),
+       url("/fonts/Aovel_Cool_Bold.woff2") format("woff"),
+       url("/fonts/Aovel_Cool_Regular.ttf") format("truetype"),
+       url("/fonts/Aovel_Cool_Regular.woff2") format("woff");
+  font-weight: 100 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aovel Cool";
+  src: url("/fonts/Aovel_Cool.ttf") format("truetype"),
+       url("/fonts/Aovel_Cool_Bold.ttf") format("truetype"),
+       url("/fonts/Aovel_Cool_Bold.woff2") format("woff"),
+       url("/fonts/Aovel_Cool_Regular.ttf") format("truetype"),
+       url("/fonts/Aovel_Cool_Regular.woff2") format("woff");
+  font-weight: 600 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-display: "Aovel Cool", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-body: "Aovel Cool", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-sans: "Aovel Cool", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+@theme {
+  --font-display: "Aovel Cool", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-body: "Aovel Cool", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-sans: "Aovel Cool", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "Aovel Cool", system-ui, sans-serif;
+  --font-serif: "Aovel Cool", system-ui, sans-serif;
+  
+  --color-brand-green: #1F8B5A;
+  --color-brand-charcoal: #111111;
+  --color-brand-gray: #F5F5F3;
+  --color-brand-border: #E7E7E7;
+
+  --animate-fade-in: fadeIn 0.3s ease-out;
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+/* Global Universal Font Override */
+*,
+*::before,
+*::after,
+html,
+body,
+button,
+input,
+textarea,
+select,
+option,
+p,
+span,
+div,
+a,
+h1, h2, h3, h4, h5, h6,
+li,
+ul,
+ol,
+label,
+table,
+td,
+th,
+.font-sans,
+.font-display,
+.font-mono,
+.font-serif,
+.font-body {
+  font-family: "Aovel Cool", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+}
+
+/* Custom scrollbar and premium utility styles */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F5F3;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4C4C2;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1F8B5A;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.6;
+  background-color: #FFFFFF;
+  color: #111111;
+  overflow-x: hidden;
+}
+
+/* Hide default cursor on desktop when custom follower is active */
+@media (pointer: fine) {
+  .custom-cursor-active,
+  .custom-cursor-active * {
+    cursor: none !important;
+  }
+}
+
+/* Editorial & Display Helpers */
+.editorial-statement {
+  font-style: italic;
+}
+
+
+
